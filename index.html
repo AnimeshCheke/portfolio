@@ -2,201 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animesh Cheke | AI Product Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        .animate-scroll:hover {
+            animation-play-state: paused;
+        }
+    </style>
 </head>
+
 <body class="bg-gray-50 text-gray-900 font-sans">
 
-    <nav class="sticky top-0 z-50 bg-white shadow-sm py-4">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter text-blue-600">ANIMESH CHEKE</span>
-            <div class="space-x-6 hidden md:block">
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
-                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
-                <a href="mailto:me.animeshcheke@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact Me</a>
-            </div>
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 bg-white shadow-sm py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <span class="text-xl font-bold tracking-tighter text-blue-600">ANIMESH CHEKE</span>
+        <div class="space-x-6 hidden md:block">
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+            <a href="#clients" class="hover:text-blue-600 transition">Clients</a>
+            <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+            <a href="mailto:me.animeshcheke@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact Me</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/3 mb-10 md:mb-0">
-                <img src="profile.png" alt="Animesh Cheke" class="rounded-2xl shadow-2xl w-64 h-[19rem] object-cover border-4 border-blue-50 mx-auto">
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6">AI Product / Project Manager</h1>
+        <p class="text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
+            Dynamic & results-driven SAFe-certified professional delivering transformative solutions across diverse technology landscapes.
+        </p>
+        <p class="text-xl text-gray-600 mb-6"><b>Goal:</b> To make software delivery vastly more Efficient & Impactful.</p>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Professional Experience</h2>
+
+        <div class="space-y-10">
+
+            <div class="bg-white p-8 rounded-xl shadow border-l-4 border-blue-600">
+                <h3 class="text-xl font-bold">Project Manager</h3>
+                <p class="text-blue-600 font-medium mb-4">Telomere | Mar 2024 - Present</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Boosted team velocity by 25% via agile frameworks.</li>
+                    <li>Architected LLM + RAG based personalization features.</li>
+                    <li>Improved retention by 30% using data-driven KPIs.</li>
+                </ul>
             </div>
-            <div class="md:w-2/3 md:pl-12">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">AI Product/Project Manager</h1>
-                <p class="text-xl text-gray-600 mb-6 leading-relaxed">
-                    Dynamic & results-driven SAFe-certified professional, driving impactful initiatives by leveraging experience in delivering transformative solutions across diverse technology landscapes, ensuring alignment with strategic objectives and fostering innovation. 
-                </p>
-				<p class="text-xl text-gray-600 mb-6 leading-relaxed"><b>Goal:</b> To make software delivery vastly more Efficient & Impactful.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="mailto:me.animeshcheke@gmail.com" class="flex items-center gap-2 text-gray-700 hover:text-blue-600"><i class="fas fa-envelope"></i> me.animeshcheke@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/animeshcheke" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-blue-600"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <span class="flex items-center gap-2 text-gray-700"><i class="fas fa-location-dot"></i> Bengaluru, India </span>
-                </div>
-                <div class="mt-8">
-                    <a href="AnimeshChekeAITechProM.pdf" download class="bg-gray-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-black transition shadow-lg">
-                        <i class="fas fa-download mr-2"></i> Download Full Resume
-                    </a>
-                </div>
+
+            <div class="bg-white p-8 rounded-xl shadow border-l-4 border-gray-300">
+                <h3 class="text-xl font-bold">Software Engineer (Project Lead)</h3>
+                <p class="text-blue-600 font-medium mb-4">Siemens PLM | 2018 - 2024</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Led Agile transformation for Teamcenter PLM.</li>
+                    <li>Migrated AngularJS to ReactJS improving scalability.</li>
+                    <li>Managed release operations for BMW, Ford, Suzuki.</li>
+                </ul>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="bg-blue-600 py-12 text-white">
-        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div><div class="text-3xl font-bold">7+ Years</div><div class="text-blue-100">Experience </div></div>
-            <div><div class="text-3xl font-bold">6+</div><div class="text-blue-100">Digital Transformations </div></div>
-            <div><div class="text-3xl font-bold">30%</div><div class="text-blue-100">Retention Increase </div></div>
-            <div><div class="text-3xl font-bold">PMP</div><div class="text-blue-100">Certified </div></div>
-        </div>
-    </section>
+<!-- CLIENTS SECTION -->
+<section id="clients" class="py-20 bg-white border-t">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Clients I've Worked With</h2>
 
-    <section id="experience" class="py-20">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Professional Experience</h2>
-            
-            <div class="space-y-12">
-                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-blue-600">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Project Manager</h3>
-                            <p class="text-blue-600 font-medium">Telomere | Mar 2024 - Present </p>
-                        </div>
-                    </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Orchestrated end-to-end delivery of a nutrition digital platform, aligning <b>product strategy with business goals</b> under tight 3-month timelines.</li>
-                        <li><b>Boosted team velocity by 25%</b> by instituting agile frameworks, Jira workflows, and cross-functional governance for developers and health experts.</li>
-                        <li>Architected personalized coaching features using <b>fine-tuned LLMs and RAG,</b> resulting in a 20% increase in feature adoption.</li>
-						<li>Drove a 30% lift in user retention and satisfaction by leveraging <b>data-driven KPIs </b>to iterate on habit-tracking and engagement tools.</li>
-						<li>Collaborated with the <b>Founder’s Office to execute strategic initiatives</b> and manage high-level stakeholder expectations in a fast-paced environment.</li>
-						<li>Improved operational efficiency by <b>developing internal training materials</b> on agile practices, fostering a cohesive and predictable delivery culture.</li>
-                    </ul>
-                </div>
+        <div class="relative overflow-hidden">
 
-                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-gray-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Software Engineer (Project Lead)</h3>
-                            <p class="text-blue-600 font-medium">Siemens PLM | 2018 - 2024 </p>
-                        </div>
-                        <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded">Werner Von Siemens Award </span>
-                    </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Led Agile transformation and feature delivery for Teamcenter PLM using ReactJS and Node.js, <b>managing teams of 15–20</b> to achieve a 30% boost in system performance.</li>
-                        <li>Orchestrated high-stakes migrations, transitioning from <b>legacy AngularJS to ReactJS</b> to enhance scalability by 15% and establish a future-proof tech stack.</li>
-                        <li>Directed end-to-end <b>release management and mission-critical patching</b> for major OEMs (BMW, Ford, Suzuki), resulting in a 25% uplift in customer satisfaction.</li>
-						<li>Optimized product lifecycles (PLM) by translating business needs into <b>technical specifications for scalable cloud architectures</b> and modernized infrastructure.</li>
-						<li><b>Spearheaded UI/UX enhancements</b> within Active Workspace, delivering complex data management features that improved interface functionality by 25%.</li>
-						<li>Revolutionized QA efficiency by <b>automating 5,000+ minutes of manual testing via Selenium and SOA</b>, while instituting TDD practices to ensure high-quality deployments.</li>
-						<li>Streamlined cross-functional operations by <b>aligning stakeholders, optimizing automation pipelines</b> (Gradle/Maven), and improving QA throughput by 20%.</li>
-                    </ul>
-                </div>
-				
-				<div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-gray-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Intern </h3>
-                            <p class="text-blue-600 font-medium">Volvo(Associated with Connecticus Tech) | 2018 </p>
-                        </div>
-                    </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Applied <b>NLP techniques</b> to analyze safety data, deriving actionable insights for incident prevention.</li>
-                        <li>Integrated NLP analytics into <b>Volvo safety systems,</b> enhancing data-driven decision-making. </li>
-                        <li>Conducted <b>knowledge transfer sessions on NLP applications</b>, contributing to a 5% reduction in incidents. </li>
-						<li>Supported strategic insights that contributed to <b>securing a 10/10 GPA</b> in the final semester. </li>
-						<li><b>Secured a competitive paid internship</b> during the final semester, demonstrating early technical aptitude and industry readiness.</li>
-                    </ul>
-                </div>
+            <div class="animate-scroll space-x-20 items-center">
+
+                <!-- Logos -->
+                <img src="nasa.png" class="h-16 grayscale hover:grayscale-0 transition duration-300" alt="NASA">
+                <img src="suzuki.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Suzuki">
+                <img src="siemens.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Siemens">
+                <img src="volvo.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Volvo">
+                <img src="bombardier.png" class="h-14 grayscale hover:grayscale-0 transition duration-300" alt="Bombardier">
+
+                <!-- Duplicate for seamless loop -->
+                <img src="nasa.png" class="h-16 grayscale hover:grayscale-0 transition duration-300" alt="NASA">
+                <img src="suzuki.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Suzuki">
+                <img src="siemens.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Siemens">
+                <img src="volvo.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Volvo">
+                <img src="bombardier.png" class="h-14 grayscale hover:grayscale-0 transition duration-300" alt="Bombardier">
+
             </div>
-        </div>
-    </section>
 
-    <section id="skills" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Expertise & Technical Stack</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="font-bold text-blue-600 mb-4 uppercase text-sm tracking-widest">Core Competencies</h4>
-                    <div class="flex flex-wrap gap-2 text-sm">
-                        <span class="bg-gray-100 px-3 py-1 rounded">AI Integration </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">Agentic Workflow </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">SaaS Implementation </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">System Architecture </span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Digital Transformation Strategies </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">Risk Management & Stakeholder Engagement</span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">Product Lifecycle Management </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">Agile & Scrum Methodologies </span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Technical Delivery Management  </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">SDLC </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">Cloud Computing </span>
-                        <span class="bg-gray-100 px-3 py-1 rounded">Enterprise Implementations  </span>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h4 class="font-bold text-blue-600 mb-4 uppercase text-sm tracking-widest">Technical Tools</h4>
-                    <div class="flex flex-wrap gap-2 text-sm">
-                        <span class="bg-gray-100 px-3 py-1 rounded">Jira</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Confluence</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Bitbucket</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Trello</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">MS Project</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Polarion ALM</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">MS Dynamics 365</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Scrum/Kanban</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Xtreme Programming</span>
-						
-						<span class="bg-gray-100 px-3 py-1 rounded">JavaScript</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">React</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Angular</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">SQL</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">GIT</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Linux</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Tableau</span>
-						
-						<span class="bg-gray-100 px-3 py-1 rounded">AWS</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">ELK Stack</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Grafana</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">Prometheus</span>
-						<span class="bg-gray-100 px-3 py-1 rounded">CloudWatch</span>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-    				<h4 class="font-bold text-blue-600 mb-4 uppercase text-sm tracking-widest">Education</h4>
-    
-    					<p class="text-sm font-bold mt-2">B.Tech in Computer Engineering</p>
-    					<p class="text-xs text-gray-500">Vishwakarma Institute Of Technology (2018)</p>
-    
-   					 	<p class="text-sm font-bold mt-4">Certifications</p>
-    					<ul class="list-disc list-inside text-xs text-gray-500 p-0 m-0">
-        				<li>PMP</li>
-        				<li>McKinsey Forward Program</li>
-       					<li>Comprehensive Guide to Financial Market, Investing, Trading</li>
-    					</ul>
-				</div>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="bg-white py-10 border-t">
-        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
-            <p>&copy; 2026 Animesh Cheke. All rights reserved.</p>
-            <div class="mt-4 space-x-4">
-                <a href="https://www.linkedin.com/in/animeshcheke" class="hover:text-blue-600">LinkedIn</a>
-                <a href="mailto:me.animeshcheke@gmail.com" class="hover:text-blue-600">Email</a>
-            </div>
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Expertise</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <span class="bg-white px-4 py-2 rounded shadow">AI Integration</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Agile & Scrum</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Cloud Computing</span>
+            <span class="bg-white px-4 py-2 rounded shadow">System Architecture</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Digital Transformation</span>
         </div>
-    </footer>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white py-10 border-t">
+    <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Animesh Cheke. All rights reserved.</p>
+        <div class="mt-4 space-x-4">
+            <a href="https://www.linkedin.com/in/animeshcheke" class="hover:text-blue-600">LinkedIn</a>
+            <a href="mailto:me.animeshcheke@gmail.com" class="hover:text-blue-600">Email</a>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
