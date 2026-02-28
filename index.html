@@ -7,21 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 	<style>
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
 
-        .animate-scroll {
-            display: flex;
-            width: max-content;
-            animation: scroll 30s linear infinite;
-        }
+.animate-marquee {
+    animation: marquee 25s linear infinite;
+}
 
-        .animate-scroll:hover {
-            animation-play-state: paused;
-        }
-    </style>
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+</style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
@@ -132,33 +130,37 @@
     </section>
 
     <!-- CLIENTS SECTION -->
-	<section id="clients" class="py-20 bg-white border-t">
-		<div class="container mx-auto px-6 text-center">
-			<h2 class="text-3xl font-bold mb-12">Clients I've Worked With</h2>
-	
-			<div class="relative overflow-hidden">
-	
-				<div class="animate-scroll space-x-20 items-center">
-	
-					<!-- Logos -->
-					<img src="nasa.png" class="h-16 grayscale hover:grayscale-0 transition duration-300" alt="NASA">
-					<img src="suzuki.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Suzuki">
-					<img src="siemens.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Siemens">
-					<img src="volvo.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Volvo">
-					<img src="bombardier.png" class="h-14 grayscale hover:grayscale-0 transition duration-300" alt="Bombardier">
-	
-					<!-- Duplicate for seamless loop -->
-					<img src="nasa.png" class="h-16 grayscale hover:grayscale-0 transition duration-300" alt="NASA">
-					<img src="suzuki.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Suzuki">
-					<img src="siemens.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Siemens">
-					<img src="volvo.png" class="h-12 grayscale hover:grayscale-0 transition duration-300" alt="Volvo">
-					<img src="bombardier.png" class="h-14 grayscale hover:grayscale-0 transition duration-300" alt="Bombardier">
-	
-				</div>
-	
-			</div>
-		</div>
-	</section>
+<section id="clients" class="py-20 bg-white border-t">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Clients I've Worked With</h2>
+
+        <div class="relative overflow-hidden w-full">
+
+            <div class="flex w-[200%] animate-marquee">
+
+                <!-- First Set -->
+                <div class="flex items-center justify-around w-1/2 space-x-20">
+                    <img src="nasa.png" class="h-16 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="NASA">
+                    <img src="suzuki.png" class="h-12 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Suzuki">
+                    <img src="siemens.png" class="h-12 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Siemens">
+                    <img src="volvo.png" class="h-12 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Volvo">
+                    <img src="bombardier.png" class="h-14 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Bombardier">
+                </div>
+
+                <!-- Duplicate Set -->
+                <div class="flex items-center justify-around w-1/2 space-x-20">
+                    <img src="nasa.png" class="h-16 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="NASA">
+                    <img src="suzuki.png" class="h-12 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Suzuki">
+                    <img src="siemens.png" class="h-12 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Siemens">
+                    <img src="volvo.png" class="h-12 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Volvo">
+                    <img src="bombardier.png" class="h-14 flex-shrink-0 grayscale hover:grayscale-0 transition duration-300" alt="Bombardier">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
     <section id="skills" class="py-20 bg-gray-100">
@@ -239,6 +241,7 @@
 
 </body>
 </html>
+
 
 
 
